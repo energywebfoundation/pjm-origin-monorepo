@@ -1,19 +1,7 @@
-<h1 align="center">
-  <div class="row">
-  <div class="column">
-    <a href="https://www.energyweb.org/"><img src="https://www.energyweb.org/wp-content/uploads/2019/04/logo-brand.png" alt="EnergyWeb" width="150"></a>
-    <br>
-    EnergyWeb Origin
-    <br>
-  </div>
-  <div class="column">
-    <a href="https://www.pjm-eis.com/"><img src="https://www.pjm-eis.com/pjmeis/assets/images/logo.gif" alt="PJM" width="150"></a>
-    <br>
-    PJM GATS
-    <br>
-  </div>
-</div> 
-</h1>
+<p align="center">
+    <a href="https://www.energyweb.org/"><img src="https://www.energyweb.org/wp-content/uploads/2019/04/logo-brand.png" alt="EnergyWeb" width="150" hspace="150"></a>
+    <a href="https://www.pjm-eis.com/"><img src="https://www.pjm-eis.com/pjmeis/assets/images/logo.gif" alt="PJM" width="300"></a>
+</p>
 
 **Origin** is a set of toolkits that together provide a system for issuance and management of Energy Attribute Certificates (EACs). This repository is an entry point to Origin systems. It has a goal of explaining briefly the whole system and providing you with insight and info where to explore next.
 
