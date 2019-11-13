@@ -21,7 +21,7 @@ function generateNextAccount() {
     };
 }
 
-program.option('-i, --input <path>', 'input I-REC csv file');
+program.option('-i, --input <path>', 'input REC csv file');
 program.option('-o, --owner <address>', 'address of the asset owner');
 program.option('-m, --matcher <address>', 'address of the asset matcher');
 
@@ -95,7 +95,7 @@ const processAssets = async parsedContent => {
                 gpsLongitude: longitude.toString(),
                 timezone,
                 assetType,
-                complianceRegistry: 'IREC',
+                complianceRegistry: 'REC',
                 otherGreenAttributes: 'N.A.',
                 typeOfPublicSupport: 'N.A',
                 facilityName: name
@@ -113,7 +113,7 @@ const parseContent = (path: string) => {
 };
 
 (async () => {
-    console.log('----- Starting importing I-REC assets to local config file -----');
+    console.log('----- Starting importing REC assets to local config file -----');
 
     const parsedContent = parseContent(program.input);
 

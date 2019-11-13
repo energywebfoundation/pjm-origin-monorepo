@@ -90,7 +90,7 @@ describe('Application[E2E]', () => {
 
             fillInputField('maxPricePerMWh', '1');
 
-            await fillSelect('currency', 'EUR', ['EUR', 'USD', 'SGD', 'THB']);
+            await fillSelect('currency', 'USD', ['USD']);
 
             await fillSelect('timeframe', TimeFrame.daily.toString(), [
                 'Day',

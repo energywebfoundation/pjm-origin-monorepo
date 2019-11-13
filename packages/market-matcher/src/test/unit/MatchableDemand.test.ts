@@ -131,7 +131,7 @@ describe('MatchableDemand tests', () => {
 
         it('should not match demand with difference currency', async () => {
             const { demand, certificate, producingAsset } = createMatchingMocks({
-                currency: Currency.EUR
+                currency: Currency.USD
             });
 
             const matchableDemand = new MatchableDemand(demand);

@@ -189,7 +189,7 @@ export async function deployDemo() {
 
     const assetProducingPropsOffChain: ProducingAsset.IOffChainProperties = {
         assetType: 'Wind;Onshore',
-        complianceRegistry: Compliance.IREC,
+        complianceRegistry: Compliance.REC,
         facilityName: 'Wuthering Heights Windfarm',
         capacityWh: 0,
         country: 'Thailand',

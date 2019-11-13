@@ -167,7 +167,7 @@
                 "gpsLongitude": "0",
                 "timezone": "America/Los_Angeles",
                 "assetType": "Solar",
-                "complianceRegistry": "IREC",
+                "complianceRegistry": "REC",
                 "otherGreenAttributes": "N.A.",
                 "typeOfPublicSupport": "N.A",
                 "facilityName": "Solar Facility A"
@@ -194,7 +194,7 @@
                 "gpsLongitude": "0",
                 "timezone": "America/Los_Angeles",
                 "assetType": "Biomass from agriculture",
-                "complianceRegistry": "TIGR",
+                "complianceRegistry": "REC",
                 "otherGreenAttributes": "N.A.",
                 "typeOfPublicSupport": "N.A",
                 "facilityName": "Biomass Facility"
@@ -427,7 +427,7 @@
                 "otherGreenAttributes": "string",
                 "typeOfPublicSupport": "string",
                 "energyPerTimeFrame": 10,
-                "registryCompliance": "EEC",
+                "registryCompliance": "REC",
                 "startTime": 155947797,
                 "endTime": 158987797
             }

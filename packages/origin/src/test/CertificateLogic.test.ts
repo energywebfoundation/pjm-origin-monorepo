@@ -222,7 +222,7 @@ describe('CertificateLogic-Facade', () => {
             gpsLongitude: '99.977800',
             timezone: 'Asia/Bangkok',
             assetType: 'Wind',
-            complianceRegistry: Compliance.EEC,
+            complianceRegistry: Compliance.REC,
             otherGreenAttributes: '',
             typeOfPublicSupport: ''
         };
@@ -1152,7 +1152,7 @@ describe('CertificateLogic-Facade', () => {
 
         const price = 10.5;
 
-        await certificate.publishForSale(price, Currency.EUR);
+        await certificate.publishForSale(price, Currency.USD);
 
         certificate = await certificate.sync();
  
@@ -1170,7 +1170,7 @@ describe('CertificateLogic-Facade', () => {
             parentId: 10,
             offChainSettlementOptions: {
                 price: price * 100,
-                currency: Currency.EUR
+                currency: Currency.USD
             }
         } as Partial<Certificate.Entity>);
     });
@@ -1299,7 +1299,7 @@ describe('CertificateLogic-Facade', () => {
             conf
         ).sync();
 
-        await parentCertificate.publishForSale(CERTIFICATE_PRICE, Currency.EUR);
+        await parentCertificate.publishForSale(CERTIFICATE_PRICE, Currency.USD);
 
         try {
             await parentCertificate.buyCertificate(CERTIFICATE_ENERGY * 2);
@@ -1354,7 +1354,7 @@ describe('CertificateLogic-Facade', () => {
             conf
         ).sync();
 
-        await parentCertificate.publishForSale(CERTIFICATE_PRICE, Currency.EUR);
+        await parentCertificate.publishForSale(CERTIFICATE_PRICE, Currency.USD);
 
         setActiveUser(traderPK);
 
@@ -1379,7 +1379,7 @@ describe('CertificateLogic-Facade', () => {
             .length;
         const CERTIFICATE_ENERGY = 100;
         const CERTIFICATE_PRICE = 7;
-        const CERTIFICATE_CURRENCY = Currency.EUR;
+        const CERTIFICATE_CURRENCY = Currency.USD;
         const TRADER_STARTING_TOKEN_BALANCE = Number(await erc20TestToken.balanceOf(accountTrader));
         const ASSET_OWNER_STARTING_TOKEN_BALANCE = Number(
             await erc20TestToken.balanceOf(accountAssetOwner)

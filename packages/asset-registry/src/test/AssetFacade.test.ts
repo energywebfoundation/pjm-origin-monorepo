@@ -123,7 +123,7 @@ describe('Asset Facade', () => {
                 gpsLongitude: '31.1231',
                 timezone: 'Asia/Bangkok',
                 assetType: 'Wind',
-                complianceRegistry: Compliance.EEC,
+                complianceRegistry: Compliance.REC,
                 otherGreenAttributes: '',
                 typeOfPublicSupport: '',
                 facilityName: FACILITY_NAME
@@ -171,7 +171,7 @@ describe('Asset Facade', () => {
                 gpsLongitude: '31.1231',
                 timezone: 'Asia/Bangkok',
                 assetType: 'Wind',
-                complianceRegistry: Compliance.EEC,
+                complianceRegistry: Compliance.REC,
                 otherGreenAttributes: '',
                 typeOfPublicSupport: '',
                 facilityName: 'Wuthering Heights Windfarm'
@@ -218,7 +218,7 @@ describe('Asset Facade', () => {
                     gpsLongitude: '31.1231',
                     timezone: 'Asia/Bangkok',
                     assetType: 'Wind',
-                    complianceRegistry: Compliance.EEC,
+                    complianceRegistry: Compliance.REC,
                     otherGreenAttributes: '',
                     typeOfPublicSupport: '',
                     facilityName: 'Wuthering Heights Windfarm'

@@ -62,9 +62,9 @@ Time,E/Cap ratio (kWh/kW),5 MW example (kWh)
 01.01.2015 07:45,0.000664,3.32
 ```
 
-### How to import I-REC public assets
+### How to import REC public assets
 
-I-REC lists all public registered assets in https://registry.irecservices.com/Public/ReportDevices/ where you can filter and download public assets as CSV file.
+REC lists all public registered assets in https://registry.irecservices.com/Public/ReportDevices/ where you can filter and download public assets as CSV file.
 
 We have created 2 scripts to allow easy import of those assets.
 
@@ -74,7 +74,7 @@ We have created 2 scripts to allow easy import of those assets.
 Usage: yarn import-irec-assets -- [options]
 
 Options:
-  -i, --input <path>       input I-REC csv file
+  -i, --input <path>       input REC csv file
   -o, --owner <address>    address of the asset owner
   -m, --matcher <address>  address of the asset matcher
   -h, --help               output usage information

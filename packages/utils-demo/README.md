@@ -217,16 +217,14 @@ usage: command to onboard a new producing asset
     BiomassGas)
 * <code>cO2UsedForCertificate</code>: amount of CO2 already used for certificates
 * <code>complianceRegistry</code>: complaince as string (none,
-    IREC,
-    EEC,
-    TIGR)
+    REC)
 * <code>otherGreenAttributes</code>: green attributes as string
 * <code>typeOfPublicSupport</code>: type of public support as string
 
 #### example
 Onboard a new energy producing asset for the owner <code>0x33496f621350cea01b18ea5b5c43c6c233c3f72d (John Doe Four of the AssetManager Organization)
 </code>. The asset has a smart meter connected with the ethereum account <code>0x1112ec367b20d2bffd40ee11523c3d36d61adf1b</code>. We're also passing the private key <code>50764e302e4ed8ce624003deca642c03ce06934fe77585175c5576723f084d4c</code> of that smart meter because we want to log new data within the demonstration.<br>
-The asset has a capacity of <code>10000</code> Wh and went into producition on <code>01/01/2018 (1514764800)</code>. It's some kind of BiomassGas-powerplant and is compliant to TIGR. In addition, it has the green Attributes of <code>N.A.</code> and also the <code>N.A.</code> type of public support. Because we're freshly deploying that asset, it does not have a meterreading thus no need for a filehash. <br>
+The asset has a capacity of <code>10000</code> Wh and went into producition on <code>01/01/2018 (1514764800)</code>. It's some kind of BiomassGas-powerplant and is compliant to REC. In addition, it has the green Attributes of <code>N.A.</code> and also the <code>N.A.</code> type of public support. Because we're freshly deploying that asset, it does not have a meterreading thus no need for a filehash. <br>
 The asset is located in <code>Main Street 11, 01234 Anytown, AnyState, USA</code>. If you're passing the some GPS coordinates, you will see the location of the asset within the webapplication in the consuming asset detail view. Also the certificate once created can only change owners upto 3 times
 
 <code>
@@ -252,7 +250,7 @@ The asset is located in <code>Main Street 11, 01234 Anytown, AnyState, USA</code
         "timezone": "America/Los_Angeles",
         "assetType": "Biomass from agriculture",
         "cO2UsedForCertificate": 0,
-        "complianceRegistry": "TIGR",
+        "complianceRegistry": "REC",
         "otherGreenAttributes": "N.A.",
         "typeOfPublicSupport": "N.A"
     }
@@ -398,7 +396,7 @@ usage: command to publish a certificate for sale using ERC-20 tokens
 
 
 ### PUBLISH_CERTIFICATE_FOR_SALE_OFFCHAIN
-usage: command to publish a certificate for sale using off chain settlement in fiat currencies (EUR, USD)
+usage: command to publish a certificate for sale using off chain settlement in fiat currencies (USD)
 <br>params:
 * <code>certId</code>: id of the certificate to be transferred
 * <code>price</code>: price of the certificate in unit of the ERC20 test token
@@ -515,10 +513,7 @@ usage: command to create a demand
 * <code>traderPK</code>: private key of the trader creating the demand
 * <code>timeframe</code>: timeframe of contract
 * <code>maxPricePerMwh</code>: maximum price per MWh
-* <code>currency</code>: currency of exchange as string (USD,
-    EUR,
-    THB,
-    SGD)
+* <code>currency</code>: currency of exchange as string (USD)
 * <code>producingAsset</code>: <BLANK>
 * <code>consumingAsset</code>: <BLANK>
 * <code>country</code>: country where the asset is located
@@ -532,12 +527,10 @@ usage: command to create a demand
 * <code>typeOfPublicSupport</code>: type of public support as string
 * <code>energyPerTimeFrame</code>: required energy per time frame
 * <code>registryCompliance</code>: complaince as string (none,
-    IREC,
-    EEC,
-    TIGR)
+    REC)
 
 #### example
-We want to report a demand with target watt-hour per period(timeframe) as <code>10</code> and price per certified watt-hour as  <code>10</code>. The asset type required is <code>BiomassGas</code> which must comply with <code>EEC</code>. It is preferred to be a <code>hourly</code> contract with the currency of exchange set as <code>USD</code>. Trader account <code>0x4095f1db44884764C17c7A9A31B4Bf20f5779691</code> is making the demand.
+We want to report a demand with target watt-hour per period(timeframe) as <code>10</code> and price per certified watt-hour as  <code>10</code>. The asset type required is <code>BiomassGas</code> which must comply with <code>REC</code>. It is preferred to be a <code>hourly</code> contract with the currency of exchange set as <code>USD</code>. Trader account <code>0x4095f1db44884764C17c7A9A31B4Bf20f5779691</code> is making the demand.
 
 <code>
 {
@@ -557,7 +550,7 @@ We want to report a demand with target watt-hour per period(timeframe) as <code>
         "otherGreenAttributes": "string",
         "typeOfPublicSupport": "string",
         "energyPerTimeFrame": 10,
-        "registryCompliance": "EEC"
+        "registryCompliance": "REC"
     }
 }
 </code>
@@ -569,10 +562,7 @@ usage: command to report a supply
 * <code>assetOwner</code>: asset owner's address
 * <code>assetOwnerPK</code>: asset owner's private key
 * <code>price</code>: price per certified Wh
-* <code>currency</code>: currency of exchange as string (USD,
-    EUR,
-    THB,
-    SGD)
+* <code>currency</code>: currency of exchange as string (USD)
 * <code>availableWh</code>: Available watt-hour per period
 * <code>timeframe</code>: period or the timeframe of the contract
 
@@ -602,10 +592,7 @@ usage: command to make an agreement - pairing a demand with an appropriate suppl
 * <code>startTime</code>: contract's start time (UNIX, UTC)
 * <code>endTime</code>: contract's end time (UNIX, UTC)
 * <code>price</code>: agreed price per certified watt-hour
-* <code>currency</code>: currency of exchange as string (USD,
-    EUR,
-    THB,
-    SGD)
+* <code>currency</code>: currency of exchange as string (USD)
 * <code>timeframe</code>: period or the timeframe of the contract
 * <code>period</code>: total period of the contract in units of timeframe
 * <code>currentWh</code>: current Wh reading of the asset
