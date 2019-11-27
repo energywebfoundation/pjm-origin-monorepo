@@ -195,7 +195,7 @@ describe('CertificateLogic-Facade', () => {
             gpsLongitude: '99.977800',
             timezone: 'Asia/Bangkok',
             assetType: 'Wind',
-            complianceRegistry: Compliance.EEC,
+            complianceRegistry: Compliance.REC,
             otherGreenAttributes: '',
             typeOfPublicSupport: ''
         };

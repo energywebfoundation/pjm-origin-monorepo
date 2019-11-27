@@ -360,7 +360,7 @@ describe('Market-Facade', () => {
             gpsLongitude: '31.1231',
             timezone: 'Asia/Bangkok',
             assetType: 'Wind',
-            complianceRegistry: Compliance.EEC,
+            complianceRegistry: Compliance.REC,
             otherGreenAttributes: '',
             typeOfPublicSupport: '',
             facilityName: ''
@@ -393,7 +393,7 @@ describe('Market-Facade', () => {
                 otherGreenAttributes: 'string',
                 typeOfPublicSupport: 'string',
                 energyPerTimeFrame: 10,
-                registryCompliance: Compliance.EEC,
+                registryCompliance: Compliance.REC,
                 startTime: START_TIME,
                 endTime: END_TIME,
                 automaticMatching: true

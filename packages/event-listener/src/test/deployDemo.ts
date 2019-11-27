@@ -307,7 +307,7 @@ export class Demo {
 
         const assetProducingPropsOffChain: ProducingAsset.IOffChainProperties = {
             assetType: 'Wind',
-            complianceRegistry: Compliance.IREC,
+            complianceRegistry: Compliance.REC,
             facilityName: 'Wuthering Heights Windfarm',
             capacityWh: 0,
             country: 'Thailand',
@@ -379,7 +379,7 @@ export class Demo {
             otherGreenAttributes: 'string',
             typeOfPublicSupport: 'string',
             energyPerTimeFrame: 1 * Unit.MWh,
-            registryCompliance: Compliance.EEC,
+            registryCompliance: Compliance.REC,
             startTime: moment().unix(),
             endTime: moment()
                 .add(1, 'hour')

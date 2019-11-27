@@ -106,7 +106,7 @@ export function RequestIRECsModal() {
 
     return (
         <Dialog open={showModal} onClose={handleClose}>
-            <DialogTitle>{`Request I-RECs for ${producingAsset?.offChainProperties?.facilityName ||
+            <DialogTitle>{`Request RECs for ${producingAsset?.offChainProperties?.facilityName ||
                 ''}`}</DialogTitle>
             <DialogContent>
                 <TextField

@@ -9,17 +9,12 @@ export enum TimeFrame {
 
 export enum Currency {
     NONE,
-    EUR,
-    USD,
-    SGD,
-    THB
+    USD
 }
 
 export enum Compliance {
     none,
-    IREC,
-    EEC,
-    TIGR
+    REC
 }
 
 export enum Unit {

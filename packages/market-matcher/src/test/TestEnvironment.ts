@@ -222,7 +222,7 @@ const deployDemand = async (
         otherGreenAttributes: 'string',
         typeOfPublicSupport: 'string',
         energyPerTimeFrame: requiredEnergy,
-        registryCompliance: Compliance.EEC,
+        registryCompliance: Compliance.REC,
         startTime: moment().unix(),
         endTime: moment()
             .add(1, 'hour')
@@ -260,7 +260,7 @@ const deployAsset = (config: Configuration.Entity) => {
         gpsLongitude: '99.977800',
         timezone: 'Asia/Bangkok',
         assetType: 'Solar',
-        complianceRegistry: Compliance.EEC,
+        complianceRegistry: Compliance.REC,
         otherGreenAttributes: '',
         typeOfPublicSupport: ''
     };

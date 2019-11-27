@@ -77,13 +77,10 @@ function* openRequestCertificatesModalSaga(): SagaIterator {
         const reads: Asset.ISmartMeterRead[] = yield apply(asset, asset.getSmartMeterReads, []);
 
         if (asset?.owner?.address?.toLowerCase() !== currentUser?.id?.toLowerCase()) {
-            showNotification(
-                `You need to own the asset to request I-RECs.`,
-                NotificationType.Error
-            );
+            showNotification(`You need to own the asset to request RECs.`, NotificationType.Error);
         } else if (!currentUser.isRole(Role.AssetManager)) {
             showNotification(
-                `You need to have Asset Manager role to request I-RECs.`,
+                `You need to have Asset Manager role to request RECs.`,
                 NotificationType.Error
             );
         } else if (reads.length === 0) {
