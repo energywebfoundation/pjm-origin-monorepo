@@ -1,6 +1,5 @@
 {
-    "flow": [
-        {
+    "flow": [{
             "type": "CREATE_ACCOUNT",
             "data": {
                 "firstName": "John",
@@ -69,8 +68,7 @@
                 "state": "Anystate",
                 "address": "0x5b1b89a48c1fb9b6ef7fb77c453f2aaf4b156d45",
                 "privateKey": "0x622d56ab7f0e75ac133722cc065260a2792bf30ea3265415fe04f3a2dba7e1ac",
-                "rights": 12,
-                "notifications": true
+                "rights": 12
             }
         },
         {
@@ -128,44 +126,26 @@
             }
         },
         {
-            "type": "CREATE_ACCOUNT",
-            "data": {
-                "firstName": "Listener",
-                "surname": "Origin Listener",
-                "email": "listener@mailinator.com",
-                "organization": "Listener Organization",
-                "street": "Main Street",
-                "number": "7",
-                "zip": "01234",
-                "city": "Anytown",
-                "country": "USA",
-                "state": "Anystate",
-                "address": "0x4Db81bEfaF6B82553898739B788963d20Be8068a",
-                "privateKey": "0x968cc146af9c9d3ac08cca0dd3f915ed5a0966c118e26fd5e99066b0ff8bc060",
-                "rights": 64
-            }
-        },
-        {
             "type": "CREATE_PRODUCING_ASSET",
             "data": {
                 "smartMeter": "0x43daf8EF8C29126cDBABEDD07b364ad9e49aa6f7",
                 "smartMeterPK": "0xf4254d3ddc25041a85b40877184eb2f1ff9be8b686d9edacf13ce6fa958d562e",
                 "owner": "0x5b1b89a48c1fb9b6ef7fb77c453f2aaf4b156d45",
                 "operationalSince": 1514764800,
-                "capacityWh": 10000,
+                "capacityWh": 25000000,
                 "lastSmartMeterReadWh": 0,
                 "active": true,
                 "lastSmartMeterReadFileHash": "",
-                "country": "Thailand",
-                "address": "95 Moo 7, Sa Si Mum Sub-district, Kamphaeng Saen District, Nakhon Province 73140",
-                "gpsLatitude": "14.059500",
-                "gpsLongitude": "99.977800",
-                "timezone": "Asia/Bangkok",
+                "country": "USA",
+                "address": "Ringtown, PA 17967",
+                "gpsLatitude": "40.843485",
+                "gpsLongitude": "-76.201818",
+                "timezone": "America/New_York",
                 "assetType": "Wind;Onshore",
-                "complianceRegistry": "none",
+                "complianceRegistry": "REC",
                 "otherGreenAttributes": "N.A.",
                 "typeOfPublicSupport": "N.A",
-                "facilityName": "Wuthering Heights Windfarm"
+                "facilityName": "Locust Ridge Windfarm"
             }
         },
         {
@@ -175,24 +155,20 @@
                 "smartMeterPK": "0xfd59741dab6ba03ed19a7810f8d852cb3ac57e3f816f8131c47bdf863c978ab8",
                 "owner": "0xfd863c662307fcf0c15f0b9f74f1d06544f19908",
                 "operationalSince": 1483228800,
-                "capacityWh": 70000,
+                "capacityWh": 20000,
                 "lastSmartMeterReadWh": 0,
                 "active": true,
                 "lastSmartMeterReadFileHash": "",
-                "country": "Thailand",
-                "address": "12 Moo 7, Sa Si Mum Sub-district, Kamphaeng Saen District, Nakhon Province 73140",
-                "zip": "01234",
-                "city": "Anytown",
-                "street": "Main Street",
-                "houseNumber": "9",
-                "gpsLatitude": "15.1739",
-                "gpsLongitude": "101.4928",
-                "timezone": "Asia/Bangkok",
+                "country": "USA",
+                "address": "Pittsburgh, PA 15213",
+                "gpsLatitude": "40.442212",
+                "gpsLongitude": "-79.940529",
+                "timezone": "America/New_York",
                 "assetType": "Solar;Photovoltaic;Roof mounted",
-                "complianceRegistry": "IREC",
+                "complianceRegistry": "REC",
                 "otherGreenAttributes": "N.A.",
                 "typeOfPublicSupport": "N.A",
-                "facilityName": "Solar Facility A"
+                "facilityName": "Solar Decathlon House"
             }
         },
         {
@@ -202,20 +178,20 @@
                 "smartMeterPK": "0xc49bbcd1f71568b55d1ad85bae035b94df402f875a7a6d32ff100fc7e6bb6e33",
                 "owner": "0x5b1b89a48c1fb9b6ef7fb77c453f2aaf4b156d45",
                 "operationalSince": 1514764800,
-                "capacityWh": 10000,
+                "capacityWh": 500000000,
                 "lastSmartMeterReadWh": 0,
                 "active": true,
                 "lastSmartMeterReadFileHash": "",
-                "country": "Thailand",
-                "address": "95 Moo 7, Sa Si Mum Sub-district, Kamphaeng Saen District, Nakhon Province 73140",
-                "gpsLatitude": "14.059500",
-                "gpsLongitude": "99.977800",
-                "timezone": "Asia/Bangkok",
+                "country": "USA",
+                "address": "South Boston, VA 24592",
+                "gpsLatitude": "36.698430",
+                "gpsLongitude": "-78.875466",
+                "timezone": "America/New_York",
                 "assetType": "Solid;Biomass from agriculture;Agricultural products",
-                "complianceRegistry": "TIGR",
+                "complianceRegistry": "REC",
                 "otherGreenAttributes": "N.A.",
                 "typeOfPublicSupport": "N.A",
-                "facilityName": "Biomass Facility"
+                "facilityName": "Novec- Halifax County Biomass"
             }
         },
         {
@@ -225,16 +201,16 @@
                 "smartMeterPK": "7da67da863672d4cc2984e93ce28d98b0d782d8caa43cd1c977b919c0209541b",
                 "owner": "0x5b1b89a48c1fb9b6ef7fb77c453f2aaf4b156d45",
                 "operationalSince": 1529971200,
-                "capacityWh": 5000,
+                "capacityWh": 1000000000,
                 "lastSmartMeterReadWh": 0,
                 "active": true,
                 "lastSmartMeterReadFileHash": "",
-                "country": "Thailand",
-                "address": "95 Moo 7, Sa Si Mum Sub-district, Kamphaeng Saen District, Nakhon Province 73140",
-                "gpsLatitude": "14.059500",
-                "gpsLongitude": "99.977800",
-                "timezone": "Asia/Bangkok",
-                "facilityName": "Phone Factory"
+                "country": "USA",
+                "address": "West Mifflin, PA 15122",
+                "gpsLatitude": "40.333459",
+                "gpsLongitude": "-79.902521",
+                "timezone": "America/New_York",
+                "facilityName": "US Steel Corporation - Irvin Works"
             }
         }
     ]

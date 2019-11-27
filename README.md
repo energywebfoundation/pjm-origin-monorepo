@@ -1,11 +1,7 @@
-<h1 align="center">
-  <br>
-  <a href="https://www.energyweb.org/"><img src="https://www.energyweb.org/wp-content/uploads/2019/04/logo-brand.png" alt="EnergyWeb" width="150"></a>
-  <br>
-  EnergyWeb Origin
-  <br>
-  <br>
-</h1>
+<p align="center">
+    <a href="https://www.energyweb.org/"><img src="https://www.energyweb.org/wp-content/uploads/2019/04/logo-brand.png" alt="EnergyWeb" width="150" hspace="150"></a>
+    <a href="https://www.pjm-eis.com/"><img src="https://www.pjm-eis.com/pjmeis/assets/images/logo.gif" alt="PJM" width="300"></a>
+</p>
 
 **Origin** is a set of toolkits that together provide a system for issuance and management of Energy Attribute Certificates (EACs). This repository is an entry point to Origin systems. It has a goal of explaining briefly the whole system and providing you with insight and info where to explore next.
 
@@ -121,5 +117,5 @@ If you want to contribute to Origin, be sure to follow classic open source contr
     - Commit the change to the `master` branch
 2. Pull request
     - Open a pull request from your fork `master` branch
-    - Request code reviews from [@Kuzirashi](https://github.com/Kuzirashi), [@JosephBagaric](https://github.com/JosephBagaric) or [@kosecki123](https://github.com/kosecki123)
+    - Request code reviews from [@Kuzirashi](https://github.com/Kuzirashi), [@JosephBagaric](https://github.com/JosephBagaric), [@kosecki123](https://github.com/kosecki123) or [@JonathanWfels](https://github.com/JonathanWfels)
     - Once the PR is approved and the build passes, it will be merged to the master branch

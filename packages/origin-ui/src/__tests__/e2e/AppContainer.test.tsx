@@ -184,7 +184,7 @@ describe('Application[E2E]', () => {
                 'Asset Owner',
                 'Asset Manager organization ',
                 'Certified by Registry (private)',
-                'IREC ',
+                'REC ',
                 'Other Green Attributes (private)',
                 ' ',
                 'Asset Type',

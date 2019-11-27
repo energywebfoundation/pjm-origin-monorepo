@@ -239,7 +239,7 @@ describe('PurchasableCertificate-Facade', () => {
             gpsLongitude: '99.977800',
             timezone: 'Asia/Bangkok',
             assetType: 'Wind',
-            complianceRegistry: Compliance.EEC,
+            complianceRegistry: Compliance.REC,
             otherGreenAttributes: '',
             typeOfPublicSupport: ''
         };
@@ -430,7 +430,7 @@ describe('PurchasableCertificate-Facade', () => {
 
         const price = 10.5;
 
-        await pCert.publishForSale(price, Currency.EUR);
+        await pCert.publishForSale(price, Currency.USD);
 
         pCert = await pCert.sync();
 
@@ -441,7 +441,7 @@ describe('PurchasableCertificate-Facade', () => {
             acceptedToken: '0x0000000000000000000000000000000000000000',
             offChainSettlementOptions: {
                 price: price * 100,
-                currency: Currency.EUR
+                currency: Currency.USD
             }
         } as Partial<PurchasableCertificate.Entity>);
     });
@@ -530,7 +530,7 @@ describe('PurchasableCertificate-Facade', () => {
             conf
         ).sync();
 
-        await parentCertificate.publishForSale(CERTIFICATE_PRICE, Currency.EUR);
+        await parentCertificate.publishForSale(CERTIFICATE_PRICE, Currency.USD);
 
         try {
             await parentCertificate.buyCertificate(CERTIFICATE_ENERGY * 2);
@@ -558,7 +558,7 @@ describe('PurchasableCertificate-Facade', () => {
             newCertificateId,
             conf
         ).sync();
-        await parentCertificate.publishForSale(CERTIFICATE_PRICE, Currency.EUR);
+        await parentCertificate.publishForSale(CERTIFICATE_PRICE, Currency.USD);
 
         setActiveUser(traderPK);
 
@@ -577,7 +577,7 @@ describe('PurchasableCertificate-Facade', () => {
         );
         const CERTIFICATE_ENERGY = 100;
         const CERTIFICATE_PRICE = 7;
-        const CERTIFICATE_CURRENCY = Currency.EUR;
+        const CERTIFICATE_CURRENCY = Currency.USD;
         const TRADER_STARTING_TOKEN_BALANCE = Number(await erc20TestToken.balanceOf(accountTrader));
         const ASSET_OWNER_STARTING_TOKEN_BALANCE = Number(
             await erc20TestToken.balanceOf(accountAssetOwner)

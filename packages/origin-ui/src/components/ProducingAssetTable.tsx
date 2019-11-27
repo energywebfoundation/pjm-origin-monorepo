@@ -200,7 +200,7 @@ class ProducingAssetTableClass extends PaginatedLoaderFiltered<Props, IProducing
         if (this.props.currentUser && this.props.currentUser.isRole(Role.AssetManager)) {
             actions.push({
                 icon: <Assignment />,
-                name: 'Request I-RECs',
+                name: 'Request RECs',
                 onClick: (row: number) => this.requestIRECs(row)
             });
         }
