@@ -9,7 +9,7 @@ sequenceDiagram
   S->>G: Request posting for sale
   G->>G: Lock RECs in bulletin board account
   G->>O: Post RECs for sale
-  O->>E: Anchor REC (owner, device id, rec id)
+  O->>E: Anchor REC proof (rec id, owner, device id, state)
   O->>O: Create Ask
   opt Trade
     B->>O: Create Bid
@@ -18,19 +18,20 @@ sequenceDiagram
     B->>G: Confirm Transfer
     G->>G: Transfer RECs
     G->>O: Confirm transfer of RECs
-    O->>E: Update REC (new owner) 
-    O->>E: Store trade private proof (seller, buyer, volume, price)
+    O->>E: Update REC proof (new owner) 
+    O->>E: Store trade proof (seller, buyer, volume, price)
   end
   opt Claim
     B->>G: Request claiming
     G->>G: Claim RECs
     G->>O: Send claim data
-    O->>E: Update REC (new state claimed)
+    O->>E: Update REC proof (new state claimed)
   end
   opt Remove
     G->>O: Request REC removal
     O->>O: Delete Ask
     O->>G: Transfer RECs to user's active account
+    O->>E: Update REC proof (new state canceled)
   end
   opt Audit
     B->>A: Request audit & provide data
